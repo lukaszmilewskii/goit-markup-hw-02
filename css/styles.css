@@ -14,6 +14,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
 }
+
 .logo-first-color,
 .logo-second-color {
   font-family: 'Raleway';
@@ -23,20 +24,25 @@ body {
   line-height: 31px;
   letter-spacing: 0.03em;
 }
+
 .logo-first-color {
   color: #2196f3;
 }
+
 .logo-second-color {
   color: #000000;
 }
+
 .filter-item {
   background-color: #f5f4fa;
 }
+
 .filter-item-button:hover,
 .filter-item-button:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
+
 .menu-item {
   font-family: 'Roboto';
   font-style: normal;
@@ -46,7 +52,17 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
 }
-.contact-item {
+
+.menu-item:hover,
+.menu-item:focus {
+  color: #2196f3;
+}
+
+.portfolio {
+}
+
+.contact-mail,
+.contact-phone {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -55,6 +71,38 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
 }
-.menu-item:hover {
+
+.contact-mail:hover,
+.contact-mail:focus,
+.contact-phone:hover,
+.contact-phone:focus {
   color: #2196f3;
+}
+
+.footer {
+  background-color: #2f303a;
+}
+
+.logo-light-color {
+  color: #ffffff;
+}
+
+.adress {
+  color: #ffffff;
+}
+
+.footer-phone,
+.footer-mail {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.adress,
+.footer-phone,
+.footer-mail {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
