@@ -43,16 +43,6 @@ body {
   color: #ffffff;
 }
 
-.menu-item {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #212121;
-}
-
 .menu-item:hover,
 .menu-item:focus {
   color: #2196f3;
@@ -62,13 +52,23 @@ body {
 }
 
 .contact-mail,
-.contact-phone {
+.contact-phone,
+.menu-item {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.menu-item {
+  color: #212121;
+}
+
+.contact-mail,
+.contact-phone {
   color: #757575;
 }
 
