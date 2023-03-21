@@ -9,14 +9,25 @@ a {
 }
 button {
   cursor: pointer;
+  border: none;
+  border-radius: 4%;
 }
 body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
 }
-
-.logo-first-color,
-.logo-second-color {
+:root {
+  --logo-color-dark: #000000;
+  --logo-color-light: #ffffff;
+  --logo-color-color: #2196f3;
+  --hover-text-color: #2196f3;
+  --item-background-color: #f5f4fa;
+  --product-name-color: (#212121);
+  --product-description-color: #757575;
+}
+.logo-dark,
+.logo-color,
+.logo-light {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -24,78 +35,86 @@ body {
   line-height: 31px;
   letter-spacing: 0.03em;
 }
-
-.logo-first-color {
-  color: #2196f3;
+.logo-color {
+  color: var(--logo-color-color);
 }
-
-.logo-second-color {
-  color: #000000;
+.logo-dark {
+  color: var(--logo-color-dark);
 }
-
-.filter-item {
-  background-color: #f5f4fa;
+hr {
+  border: 1px solid #ececec;
 }
-
-.filter-item-button:hover,
-.filter-item-button:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+.nav-menu li a:hover,
+.nav-menu li a:focus {
+  color: var(--hover-text-color);
 }
-
-.menu-item:hover,
-.menu-item:focus {
-  color: #2196f3;
+.nav-menu li a {
+  color: #212121;
 }
-
-.portfolio {
-}
-
 .contact-mail,
 .contact-phone,
-.menu-item {
+.nav-menu li a {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #757575;
 }
-
-.menu-item {
-  color: #212121;
-}
-
 .contact-mail,
 .contact-phone {
   color: #757575;
 }
-
 .contact-mail:hover,
 .contact-mail:focus,
 .contact-phone:hover,
 .contact-phone:focus {
   color: #2196f3;
 }
-
+.portfolio {
+}
+.product-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--product-name-color);
+}
+.product-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--product-description-color);
+}
+.filter-item-button {
+  background-color: var(--item-background-color);
+}
+.filter-item-button {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+.filter-item-button:hover,
+.filter-item-button:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
 .footer {
   background-color: #2f303a;
 }
-
-.logo-light-color {
-  color: #ffffff;
+.logo-light {
+  color: var(--logo-color-light);
 }
-
 .adress {
   color: #ffffff;
 }
-
 .footer-phone,
 .footer-mail {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .adress,
 .footer-phone,
 .footer-mail {
