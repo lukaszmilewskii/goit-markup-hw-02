@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Website about WebStudio" />
-    <title>WebStudio</title>
+    <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,24 +16,27 @@
   <body>
     <header>
       <nav>
-        <a href="#">Web<span>Studio</span></a>
-        <ul>
+        <a class="logo-color" href="./index.html">Web<span class="logo-dark">Studio</span></a>
+        <ul class="nav-menu">
           <li><a href="./index.html">Agencja</a></li>
           <li><a href="./porfolio.html">Portfolio</a></li>
           <li><a href="#">Kontakt</a></li>
         </ul>
       </nav>
       <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+        <li><a class="contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="contact-phone" href="tel:+48111111111">+48 111 111 111</a></li>
       </ul>
     </header>
     <main>
-      <section id="main">
-        <h1>Efektywne rozwiązania dla waszego biznesu</h1>
-        <button type="button">Zamów usługę</button>
+      <section id="main" class="main-section">
+        <h1>
+          Efektywne rozwiązania <br />
+          dla waszego biznesu
+        </h1>
+        <button class="call-to-action-button" type="button">Zamów usługę</button>
       </section>
-      <section id="about-company">
+      <section id="about-company" class="about-company">
         <ul>
           <li>
             <h3>LOREM IPSUM</h3>
@@ -66,7 +68,7 @@
           </li>
         </ul>
       </section>
-      <section id="what-we-do">
+      <section id="what-we-do" class="what-we-do">
         <h2>Czym się zajmujemy</h2>
         <ul>
           <li>
@@ -80,7 +82,7 @@
           </li>
         </ul>
       </section>
-      <section id="our-team">
+      <section id="our-team" class="our-team">
         <h2>Nasz zespół</h2>
         <ul>
           <li>
@@ -90,8 +92,8 @@
               width="270"
               height="260"
             />
-            <h3>John Doe</h3>
-            <p>Product Designer</p>
+            <h3 class="person-name">John Doe</h3>
+            <p class="person-description">Product Designer</p>
           </li>
           <li>
             <img
@@ -100,8 +102,8 @@
               width="270"
               height="260"
             />
-            <h3>John Doe</h3>
-            <p>Frontend Developer</p>
+            <h3 class="person-name">John Doe</h3>
+            <p class="person-description">Frontend Developer</p>
           </li>
           <li>
             <img
@@ -110,24 +112,24 @@
               width="270"
               height="260"
             />
-            <h3>John Doe</h3>
-            <p>Marketing</p>
+            <h3 class="person-name">John Doe</h3>
+            <p class="person-description">Marketing</p>
           </li>
           <li>
             <img src="./images/john-ui.jpg" alt="ui designer" width="270" height="260" />
-            <h3>John Doe</h3>
-            <p>UI Designer</p>
+            <h3 class="person-name">John Doe</h3>
+            <p class="person-description">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="#">Web<span>Studio</span></a>
+    <footer class="footer">
+      <a class="logo-color" href="./index.html">Web<span class="logo-light">Studio</span></a>
       <address>
         <ul>
-          <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-          <li><a href="tel:+48111111111">+48 111 111 111</a></li>
-          <li><a href="info@example.com">info@example.com</a></li>
+          <li class="adress">m. Warszawa, Aleje Jerozolimskie 21</li>
+          <li><a class="footer-phone" href="tel:+48111111111">+48 111 111 111</a></li>
+          <li><a class="footer-mail" href="mailto:info@example.com">info@example.com</a></li>
         </ul>
       </address>
     </footer>
