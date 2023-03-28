@@ -1,27 +1,13 @@
 :root {
-  --body-general-font-color: #212121;
-  --logo-color-dark: #000;
-  --logo-color-light: #fff;
-  --logo-color-color: #2196f3;
-  --hover-link-text-color: #2196f3;
-  --header-contact-font-color: #757575;
-  --hover-contact-font-color: #2196f3;
-  --filter-item-background-color: #f5f4fa;
-  --hover-filter-item-background-color: #2196f3;
-  --hover-filter-item-font-color: #fff;
-  --product-name-color: #212121;
-  --product-description-color: #757575;
-  --footer-contact-font-color: rgba(255, 255, 255, 0.6);
-  --footer-adress-color: #fff;
-  --footer-background-color: #2f303a;
-  --main-section-background-color: #2f303a;
-  --main-section-font-color: #fff;
-  --call-to-action-background-color: #f5f4fa;
-  --hover-call-to-action-background-color: #2196f3;
-  --hover-call-to-action-font-color: #fff;
-  --person-name-color: #212121;
-  --person-description-color: #757575;
-  --about-company-description-color: #757575;
+  --font-primary: 'Roboto', sans-serif;
+  --font-color-1: #212121;
+  --font-color-2: #2196f3;
+  --font-color-3: #757575;
+  --font-color-4: #ffffff;
+  --background-color-primary: #ffffff;
+  --background-color-secondary: #2f303a;
+  --button-background-color: #f5f4fa;
+  --button-background-color-hover: #2196f3;
 }
 * {
   margin: 0;
@@ -39,108 +25,87 @@ button {
 }
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--body-general-font-color);
+  /* color: var(--body-general-font-color); */
+  font-size: 16px;
+  letter-spacing: 0.03em;
 }
-.logo-dark,
-.logo-color,
-.logo-light {
+
+.logo {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  letter-spacing: 0.03em;
+  color: var(--font-color-2);
 }
-.logo-color {
-  color: var(--logo-color-color);
+.logo span {
+  color: var(--font-color-1);
 }
-.logo-dark {
-  color: var(--logo-color-dark);
-}
-hr {
-  border: 1px solid #ececec;
-}
-.nav-menu li a {
-  color: var(--body-general-font-color);
-}
-.nav-menu li a:hover,
-.nav-menu li a:focus {
-  color: var(--hover-link-text-color);
-}
-.contact-mail,
-.contact-phone,
-.nav-menu li a {
-  font-family: 'Roboto';
+.menu-nav a {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  color: var(--font-color-1);
 }
-.contact-mail,
-.contact-phone {
-  color: var(--header-contact-font-color);
+.menu-nav a:hover,
+.menu-nav a:focus {
+  color: var(--font-color-2);
 }
-.contact-mail:hover,
-.contact-mail:focus,
-.contact-phone:hover,
-.contact-phone:focus,
-.footer-phone:hover,
-.footer-phone:focus,
-.footer-mail:hover,
-.footer-mail:focus {
-  color: var(--hover-contact-font-color);
+.header-contact a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--font-color-3);
 }
-.product-name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 36px;
-  color: var(--product-name-color);
+.header-contact a:hover,
+.header-contact a:focus {
+  color: var(--font-color-2);
 }
-.product-description {
-  font-size: 16px;
-  line-height: 30px;
-  color: var(--product-description-color);
+hr {
+  border: 1px solid #ececec;
 }
-.filter-item-button {
-  background-color: var(--filter-item-background-color);
-}
-.filter-item-button {
-  font-family: 'Roboto';
+.filters button {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
+  color: var(--font-color-1);
+  background-color: var(--button-background-color);
+  border-radius: 4px;
 }
-.filter-item-button:hover,
-.filter-item-button:focus {
-  background-color: var(--hover-filter-item-background-color);
-  color: var(--hover-filter-item-font-color);
+.filters button:hover,
+.filters button:focus {
+  color: var(--font-color-4);
+  background-color: var(--button-background-color-hover);
+}
+.products li h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--font-color-1);
+}
+.products li p {
+  line-height: 30px;
+  color: var(--font-color-3);
 }
 .footer {
-  background-color: var(--footer-background-color);
+  background-color: var(--background-color-secondary);
+  color: var(--font-color-4);
 }
-.logo-light {
-  color: var(--logo-color-light);
+.footer a span {
+  color: var(--font-color-4);
 }
-.adress {
-  color: var(--footer-adress-color);
+.footer-contact {
+  font-style: normal;
 }
-.footer-phone,
-.footer-mail {
-  color: var(--footer-contact-font-color);
-}
-.adress,
-.footer-phone,
-.footer-mail {
-  font-family: 'Roboto';
-  font-size: 14px;
+.footer-contact li a {
   line-height: 24px;
-  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 .main-section {
-  background-color: var(--main-section-background-color);
-  color: var(--main-section-font-color);
-}
-.main-section h1 {
-  font-family: 'Roboto';
+  background-color: var(--background-color-secondary);
+  color: var(--font-color-4);
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -148,58 +113,46 @@ hr {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.call-to-action-button {
-  background-color: var(--call-to-action-background-color);
-}
-.call-to-action-button:hover,
-.call-to-action-button:focus {
-  background-color: var(--hover-call-to-action-background-color);
-  color: var(--hover-call-to-action-font-color);
+.main-section button {
+  background-color: var(--button-background-color-hover);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  /* align-items: center;
+  text-align: center; */
+  letter-spacing: 0.06em;
+  color: var(--font-color-4);
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-.about-company ul li h3 {
-  font-family: 'Roboto';
+.temporary-lorem-class ul li h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--font-color-1);
 }
-.about-company ul li p {
-  font-family: 'Roboto';
+.temporary-lorem-class ul li p {
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--about-company-description-color);
+  color: var(--font-color-3);
 }
-.what-we-do h2 {
-  color: var(--body-general-font-color);
-  font-family: 'Roboto';
+.what-we-do {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  letter-spacing: 0.03em;
+  /* text-align: center; */
 }
-.our-team h2 {
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 0.03em;
-}
-.person-name {
-  color: var(--person-name-color);
-  font-family: 'Roboto';
+.our-team ul li h3 {
   font-weight: 500;
-  font-size: 16px;
   line-height: 19px;
-  letter-spacing: 0.03em;
+  /* text-align: center; */
+  color: var(--font-color-1);
 }
-.person-description {
-  color: var(--person-description-color);
-  font-family: 'Roboto';
-  font-size: 16px;
+.our-team ul li p {
   line-height: 19px;
-  letter-spacing: 0.03em;
+  /* text-align: center; */
 }
