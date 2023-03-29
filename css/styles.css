@@ -1,11 +1,13 @@
 :root {
   --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Raleway', sans-serif;
   --font-color-1: #212121;
   --font-color-2: #2196f3;
   --font-color-3: #757575;
   --font-color-4: #ffffff;
-  --background-color-primary: #ffffff;
-  --background-color-secondary: #2f303a;
+  --background-color-1: #ffffff;
+  --background-color-2: #2f303a;
+  --background-color-3: #f5f4fa;
   --button-background-color: #f5f4fa;
   --button-background-color-hover: #2196f3;
 }
@@ -24,17 +26,17 @@ button {
   border-radius: 4%;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-primary);
   /* color: var(--body-general-font-color); */
   font-size: 16px;
   letter-spacing: 0.03em;
 }
 
 .logo {
-  font-family: 'Raleway';
+  font-family: var(--font-secondary);
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2em;
   color: var(--font-color-2);
 }
 .logo span {
@@ -43,32 +45,31 @@ body {
 .menu-nav a {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14em;
   letter-spacing: 0.02em;
   color: var(--font-color-1);
 }
 .menu-nav a:hover,
-.menu-nav a:focus {
+.menu-nav a:focus,
+.header-contact a:hover,
+.header-contact a:focus {
   color: var(--font-color-2);
 }
 .header-contact a {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14em;
   letter-spacing: 0.02em;
   color: var(--font-color-3);
-}
-.header-contact a:hover,
-.header-contact a:focus {
-  color: var(--font-color-2);
 }
 hr {
   border: 1px solid #ececec;
 }
-.filters button {
+.filter-item {
+  font-family: var(--font-primary);
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6em;
   color: var(--font-color-1);
   background-color: var(--button-background-color);
   border-radius: 4px;
@@ -81,43 +82,49 @@ hr {
 .products li h3 {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2em;
   letter-spacing: 0.06em;
   color: var(--font-color-1);
 }
 .products li p {
-  line-height: 30px;
+  line-height: 1.9em;
   color: var(--font-color-3);
 }
 .footer {
-  background-color: var(--background-color-secondary);
+  background-color: var(--background-color-2);
   color: var(--font-color-4);
+  line-height: 1.7em;
 }
 .footer a span {
   color: var(--font-color-4);
 }
 .footer-contact {
   font-style: normal;
+  font-size: 14px;
 }
 .footer-contact li a {
-  line-height: 24px;
   color: rgba(255, 255, 255, 0.6);
 }
+.logo {
+  line-height: 1.4em;
+}
 .main-section {
-  background-color: var(--background-color-secondary);
+  background-color: var(--background-color-2);
+}
+.main-section h1 {
   color: var(--font-color-4);
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36em;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.main-section button {
+.main-button {
+  font-size: 16px;
   background-color: var(--button-background-color-hover);
   font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
+  line-height: 1.9em;
   display: flex;
   /* align-items: center;
   text-align: center; */
@@ -130,29 +137,34 @@ hr {
 .temporary-lorem-class ul li h3 {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: 1.14em;
   text-transform: uppercase;
   color: var(--font-color-1);
 }
 .temporary-lorem-class ul li p {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71em;
   color: var(--font-color-3);
 }
-.what-we-do {
+.our-team {
+  background-color: var(--background-color-3);
+}
+.what-we-do h2,
+.our-team h2 {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
-  /* text-align: center; */
+  line-height: 1.2em;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .our-team ul li h3 {
   font-weight: 500;
-  line-height: 19px;
-  /* text-align: center; */
+  line-height: 1.18em;
+  text-align: center;
   color: var(--font-color-1);
 }
 .our-team ul li p {
-  line-height: 19px;
-  /* text-align: center; */
+  line-height: 1.18em;
+  text-align: center;
+  color: var(--font-color-3);
 }
